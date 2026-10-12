@@ -23,5 +23,5 @@ if __name__ == "__main__":
                             codon, aa = token.split(':')
                             massa = weights.get(aa, 0.0)
                             total_mass += massa
-                            print(f"Códão {codon} ({aa}) -> Massa: {massa:.2f} Da")
+                            print(f"Codon {codon} ({aa}) -> Massa: {massa:.2f} Da")
                     print(f"\nMassa molecular total: {total_mass:.2f} Da")

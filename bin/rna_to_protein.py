@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import glob
 
 g_code = {
     'GCA': 'Ala', 'GCC': 'Ala', 'GCG': 'Ala', 'GCU': 'Ala',
@@ -28,16 +29,20 @@ g_code = {
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         rna_file = sys.argv[1]
-        with open(rna_file, 'r') as f:
-            for line in f:
-                if line.startswith('>'):
-                    print(line.strip())
-                else:
-                    rna = line.strip().upper()
-                    print("Códões -> Aminoácidos:")
-                    pairs = []
-                    for i in range(0, len(rna) - 2, 3):
-                        codon = rna[i:i+3]
-                        aa = g_code.get(codon, 'X')
-                        pairs.append(f"{codon}:{aa}")
-                    print(" ".join(pairs))
+    else:
+        files = glob.glob("*.txt")
+        rna_file = files[0] if files else "rna.txt"
+
+    with open(rna_file, 'r') as f:
+        for line in f:
+            if line.startswith('>'):
+                print(line.strip())
+            else:
+                rna = line.strip().upper()
+                print("Codons -> Aminoácidos:")
+                pairs = []
+                for i in range(0, len(rna) - 2, 3):
+                    codon = rna[i:i+3]
+                    aa = g_code.get(codon, 'X')
+                    pairs.append(f"{codon}:{aa}")
+                print(" ".join(pairs))
