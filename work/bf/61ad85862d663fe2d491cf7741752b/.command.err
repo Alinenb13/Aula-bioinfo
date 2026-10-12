@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspaces/Aula-bioinfo/bin/dna_to_rna.py", line 10, in <module>
+    with open(dna_file, 'r') as f:
+         ~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'dna.fa'

@@ -1,0 +1,3 @@
+>seq1
+Códões -> Aminoácidos:
+AUG:Met GCC:Ala AUU:Ile GUA:Val AUG:Met GCC:Ala

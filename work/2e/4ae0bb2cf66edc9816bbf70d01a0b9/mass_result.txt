@@ -1,0 +1,13 @@
+Cálculo de massa individual por aminoácido:
+Códão Aminoácidos () -> Massa: 0.00 Da
+
+Massa molecular total: 0.00 Da
+Cálculo de massa individual por aminoácido:
+Códão AUG (Met) -> Massa: 149.21 Da
+Códão GCC (Ala) -> Massa: 89.09 Da
+Códão AUU (Ile) -> Massa: 131.17 Da
+Códão GUA (Val) -> Massa: 117.15 Da
+Códão AUG (Met) -> Massa: 149.21 Da
+Códão GCC (Ala) -> Massa: 89.09 Da
+
+Massa molecular total: 724.92 Da
